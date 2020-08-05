@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Food Mood</string>
+    <string name="username">UserName</string>
+    <string name="password">password</string>
+    <string name="signin">Signin</string>
+    <string name="signup">Sign Up</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="registered">Registered</string>
+    <string name="already_registered">Already Registered</string>
+    <string name="Email">email</string>
+    <string name="Age">age</string>
+    <string name="confirmpassword">Confirmpassword</string>
+    <string name="Admin">admin</string>
+    <string name="User">user</string>
+    <string name="viewrecipes">All Recipes</string>
+    <string name="editrecipes">Edit Recipes</string>
+    <string name="delete_recipes">Delete Recipes</string>
+    <string name="addrecipes">Add Recipes</string>
+    <string name="add_recipes">Add Recipes</string>
+    <string name="link_text"><a href="#">Youtube link</a></string>
+
+
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F0B118</color>
+    <color name="colorgrey">#978F8F</color>
+    <color name="colorPrimaryDark">#29282C</color>
+    <color name="colorprple">#F0B118</color>
+    <color name="aaa">#161615</color>
+    <color name="white">#FFFDFD</color>
+    <color name="coloryellow">#F0B118</color>
+    <color name="divider">#E91E63</color>
+    <color name="redYoutube">#FC0404</color>
+<color name="lime">#C8CD77</color>
+    <color name="pink">#C1E1D2</color>
+    <color name="lightpink">#F5C3C2</color>
+    <color name="red">#FFDAB9</color>
+    <color name="lightyellow">#F5E7C690</color>
+    <color name="blue">#87CEEB</color>
+</resources>

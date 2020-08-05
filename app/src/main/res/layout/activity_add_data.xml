@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+
+    tools:context=".addData">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.1">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/pick_image"
+                android:layout_width="290dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/imagee"
+                android:text="Select image" />
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/n1"
+                android:layout_width="200dp"
+                android:background="@drawable/border"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="FOOD NAME"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/e2"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_textarea"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:hint="Ingredients"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="10"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_textarea"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:hint="FOOD RECIPE"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="20"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"/>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/link"
+                android:layout_width="300dp"
+                android:background="@drawable/border"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:hint="Youtube link"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </LinearLayout>
+
+
+</ScrollView>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/add"
+        android:background="@drawable/rounded_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="ADD RECIPE"/>
+
+
+
+    </LinearLayout>
+

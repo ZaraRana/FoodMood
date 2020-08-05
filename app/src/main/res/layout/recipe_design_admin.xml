@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:background="@color/cardview_dark_background"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView_admin"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/home" />
+
+    <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <TextView
+         android:id="@+id/title_admin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="8dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="10dp"
+         android:text="HOME"
+         android:textSize="20dp" />
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/title_admin"
+         android:weightSum="3">
+
+         <Space
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1">
+
+         </Space>
+
+         <Button
+             android:id="@+id/e1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight=".7"
+             android:background="@drawable/edit" />
+
+         <Space
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight=".2">
+
+         </Space>
+         <Button
+             android:id="@+id/d1"
+             android:layout_width="00dp"
+             android:layout_height="50dp"
+             android:layout_weight=".7"
+             android:background="@drawable/del"
+             />
+     </LinearLayout>
+
+ </RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SingleRecipe">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <!--    <VideoView-->
+        <!--    android:layout_width="match_parent"-->
+        <!--    android:layout_height="250dp">-->
+
+        <!--    </VideoView>-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Chinese Noodles"
+            android:textColor="#F0B118"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:fontFamily="casual">
+
+        </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coloryellow">
+
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/edit">
+
+                </ImageView>
+</LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+
+            app:cardElevation="9dp"
+
+            android:layout_marginTop="-90dp"
+            android:background="@color/cardview_dark_background"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/ingredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="8dp"
+                    android:text="INGREDIENTS:"
+                    android:textSize="20dp"
+                    app:fontFamily="sans-serif" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="9dp"
+            android:background="@color/cardview_dark_background"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="8dp"
+                    android:text="Recipes fdhkjsdhfjksdhfsd  jkasdskad asjkhjkhdkdkasdkas dhsdhfkh  sdkfhksdfh fdjsdbjk"
+                    android:textSize="20dp"
+                    app:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="8dp"
+                    android:text="@string/link_text"
+                    android:textColor="@color/redYoutube"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:fontFamily="sans-serif" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:rating="0">
+
+        </RatingBar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/commentbox"
+        android:layout_width="299dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_textarea"
+        android:gravity="center"
+        android:hint="Enter your feedback here"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btn_sendFeedback"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_send_black_24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+    </Button>
+</LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating and Reviews"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            app:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="@color/coloryellow"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_user_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="Rating: 0.0">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5">
+
+        </RatingBar>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:divider="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+    <include
+        layout="@layout/item_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

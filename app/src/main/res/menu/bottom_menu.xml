@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_restaurant_menu_black_24dp"
+        android:title="Food Mood"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/all_categories"
+        android:enabled="true"
+        android:icon="@drawable/iii"
+        android:title="All Categories"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_more"
+        android:enabled="true"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="LogOut"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>
